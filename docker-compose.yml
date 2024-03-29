@@ -84,6 +84,7 @@ services:
   celery-beat:
     build:
       context: .
+    restart: always
     networks:
       - network
     volumes:
